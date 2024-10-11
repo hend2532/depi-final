@@ -6,6 +6,7 @@ const AddMeal = () => {
   const [name, setName] = useState("");
   const [calories, setCalories] = useState(0);
   const [image, setImage] = useState("");
+  const [desc, setDesc] = useState("");
   const [meals, setMeals] = useState([]);
   console.log(meals);
 
@@ -15,6 +16,7 @@ const AddMeal = () => {
     formData.append("name", name);
     formData.append("calories", calories);
     formData.append("image", image);
+    formData.append("desc", desc);
 
     try {
       const response = await axios.post(
@@ -31,6 +33,10 @@ const AddMeal = () => {
     } catch (error) {
       console.error("Error adding meal:", error.response ? error.response.data : error.message);
     }
+    setName("");
+    setCalories(0);
+    setImage("");
+    setDesc("");
   };
 
   const fetchMeals = async () => {
@@ -66,7 +72,13 @@ const AddMeal = () => {
       <label>Image</label>
         <label className="image" for="upload">Upload Image...</label>
          <input id="upload" type="file" onChange={(e) => setImage(e.target.files[0])} />
-
+         <label>Description</label>
+      <input
+        placeholder="Description..."
+        value={desc}
+        type="text"
+        onChange={(e) => setDesc(e.target.value)}
+      />
       <button type="submit">Add </button>
 
     </form>
@@ -78,6 +90,7 @@ const AddMeal = () => {
           <img src={meal.imageUrl} alt={meal.name} />
           <h4>{meal.name}</h4>
           <p>Calories: {meal.calories}</p>
+          <p>{meal.desc}</p>
         </div>
       ))}
       </div>

@@ -40,7 +40,6 @@ input{
     outline: none;
 }
 .image{
-    margin-bottom: 20px;
     padding: 30px 10px;
     border: 1px solid #bdbdbd;
     border-radius: 10px;
@@ -48,6 +47,7 @@ input{
     width: 80%;
     cursor: pointer;
     margin: auto;
+    margin-bottom: 20px;
 }
 input[type ="file"]{
     cursor: pointer;
@@ -70,9 +70,9 @@ button{
 }
 .meals{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
 .meal{
     border-radius: 10px;
