@@ -1,0 +1,105 @@
+.container {
+  background-color: white;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 230px;
+  height: 100vh; /* Full viewport height to make it a full sidebar */
+  box-shadow: inset 0 0 5px 0px rgba(115, 112, 112, 0.5);
+  z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.div2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  height: 80px;
+}
+
+.div3 {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.A {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
+  justify-content: flex-end;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid gray;
+  margin: 10px 0;
+}
+
+.div4 {
+  background-color: lightseagreen;
+  border: solid;
+  height: 100px;
+  width: 180px;
+  margin: auto;
+  border-radius: 10%;
+}
+
+.cont {
+  background-color: palevioletred;
+  height: 130px;
+  position: relative;
+  width: calc(100% - 270px); /* Adjust width for content beside the sidebar */
+  margin-left: 250px;
+  border: solid;
+  box-shadow: inset 0 0 7px 0px rgba(92, 89, 89, 0.5);
+}
+
+
+
+
+.row {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  width:300px;
+  border: solid;
+}
+
+.row img {
+  border-radius: 12px;
+  max-width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+.row h4 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.row p {
+  color: #777;
+  font-size: 14px;
+}
+
+.row:hover {
+  transform: scale(1.05);
+}
+
+
+.co {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  justify-content: center;
+column-gap:-40px;
+row-gap: 15px;;
+  margin-top: 30px;
+  position: relative;
+  left:200px;
+}

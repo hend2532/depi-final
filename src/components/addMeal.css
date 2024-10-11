@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #f2f7f8;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+   color: rgb(71, 162, 162); 
+   font-size: 25px;
+   font-weight: 500;
+}
+h2{
+   color: rgb(71, 162, 162); 
+   font-size: 25px;
+   font-weight: 500;
+   margin: 30px;
+}
+label{
+   margin-left: -70%;
+   margin-bottom: 10px;
+}
+input{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    width: 80%;
+    outline: none;
+}
+.image{
+    margin-bottom: 20px;
+    padding: 30px 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    background-color: #fefefe;
+    width: 80%;
+    cursor: pointer;
+    margin: auto;
+}
+input[type ="file"]{
+    cursor: pointer;
+    overflow: hidden;  
+    display: none;
+}
+
+button{
+    padding: 10px;
+    color: #f2f7f8;
+    background-color: rgb(71, 162, 162);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 150px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: -190px;
+}
+.meals{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+.meal{
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f2f7f8;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.meal img{
+    width: 200px;
+    height: 200px;
+}
+.meal h4{
+    padding: 15px;
+    color: #777;
+}
+.meal p{
+    padding:0 15px ;
+    color: #bc8989;
+}
