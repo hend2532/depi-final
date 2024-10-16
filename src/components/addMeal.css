@@ -1,98 +1,205 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-form{
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  border-radius: 20px;
+  padding: 20px 50px;
+  background-color: rgb(224, 243, 239);
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h3 {
+  color: rgb(71, 162, 162);
+  font-size: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid  rgb(71, 162, 162);
+}
+h2 {
+  color: rgb(71, 162, 162);
+  font-size: 25px;
+  font-weight: 500;
+  margin: 30px auto;
+  border-bottom: 2px solid  rgb(71, 162, 162);
+  width: fit-content;
+  padding: 3px;
+}
+label {
+  margin-left: -70%;
+  margin-bottom: 10px;
+}
+input ,select{
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  width: 80%;
+  outline: none;
+}
+.image {
+  padding: 30px 10px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  background-color: #fefefe;
+  width: 80%;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 20px;
+}
+input[type="file"] {
+  cursor: pointer;
+  overflow: hidden;
+  display: none;
+}
+.delete{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    border-radius: 20px;
-    padding: 20px;
-    background-color: #f2f7f8;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-h3{
-   color: rgb(71, 162, 162); 
-   font-size: 25px;
-   font-weight: 500;
-}
-h2{
-   color: rgb(71, 162, 162); 
-   font-size: 25px;
-   font-weight: 500;
-   margin: 30px;
-}
-label{
-   margin-left: -70%;
-   margin-bottom: 10px;
-}
-input{
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #bdbdbd;
-    border-radius: 10px;
-    width: 80%;
-    outline: none;
-}
-.image{
-    padding: 30px 10px;
-    border: 1px solid #bdbdbd;
-    border-radius: 10px;
-    background-color: #fefefe;
-    width: 80%;
-    cursor: pointer;
-    margin: auto;
-    margin-bottom: 20px;
-}
-input[type ="file"]{
-    cursor: pointer;
-    overflow: hidden;  
-    display: none;
 }
 
-button{
-    padding: 10px;
-    color: #f2f7f8;
-    background-color: rgb(71, 162, 162);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 150px;
-    font-weight: 500;
-    line-height: 20px;
+ button{
+  padding: 10px;
+  color: #f2f7f8;
+  background-color: rgb(71, 162, 162);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 150px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.btn{
     margin-left: -190px;
 }
-.meals{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+button:hover{
+    background-color: rgba(71, 162, 162, 0.736); 
 }
-.meal{
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #f2f7f8;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+.meals {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.meal img{
-    width: 200px;
-    height: 200px;
+.meal {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f2f7f8;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-decoration: none;
+  width: 200px;
 }
-.meal h4{
-    padding: 15px;
-    color: #777;
+.meal img {
+  width: 200px;
+  height: 200px;
 }
-.meal p{
-    padding:0 15px ;
-    color: #bc8989;
+.meal h4 {
+  padding: 15px;
+  color: #777;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.icon .deleteMeal,.editMeal {
+  background: #dc3546e0;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+  height: 15px;
+  width: 15px;
+  padding: 4px;
+  /* padding-top: 4px; */
+  cursor: pointer;
+}
+
+.icon  .deleteMeal:hover {
+  background-color: #f9c0c0;
+}
+.meal p {
+  padding: 0 15px;
+  color: #bc8989;
+}
+.meal .desc {
+  color: #777;
+  font-size: 14px;
+}
+ .icon {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.editMeal{
+  border-radius: 50%;
+  background-color: rgb(71, 162, 162);
+  color: white;
+  height: 25px;
+  width: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: -30px;
+}
+.editMeal:hover {
+  background-color: rgba(71, 162, 162, 0.786);
+}
+
+.details{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.detail{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+
+}
+.details img{
+  width: 250px;
+  border-radius: 10px;
+}
+.detail h2{
+  font-size: 18px;
+  margin: 10px;
+  border: 0;
+}
+.detail p{
+  color: #777;
+  margin: 5px;
+  font-size: 14px;
+}
+.icon{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.icon a{
+  text-decoration: none;
+}
+.detailsMeal{
+  color: rgb(71, 162, 162);
+  padding: 4px;
+  border-radius: 5px;
+}
+.detailsMeal:hover{
+  color: rgb(27, 116, 116);
+  background: #eee;
 }

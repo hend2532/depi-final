@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+.container {
+  margin: auto;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid rgba(98, 136, 136, 0.349);
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 20px;
+  background-color: rgb(224, 243, 239);
+}
+.all {
+  width: 300px;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.top,
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+.arrow {
+  width: 35px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+h3 {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 22px;
+  color: rgb(51, 145, 112);
+  margin-bottom: 20px;
+  width: fit-content;
+}
+input {
+  margin-bottom: 30px;
+  /* background-color: #eee; */
+
+  width: 200px;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+input::placeholder {
+  font-size: 12px;
+  color: rgb(51, 145, 112);
+}
+.parent {
+  position: relative;
+  margin: auto;
+}
+#ico {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+}
+.login {
+  width: 200px;
+  height: 40px;
+  color: white;
+  background-color: rgb(51, 145, 112);
+  /* font-weight: bold; */
+  font-size: 20px;
+  border: none;
+  outline: none;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+h4 {
+  text-align: center;
+  padding: 20px 5px;
+  font-size: 18px;
+  color: rgb(51, 145, 112);
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.h4-signup {
+  text-align: center;
+  padding: 20px 5px;
+  font-size: 18px;
+  color: rgb(51, 145, 112);
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.icons {
+  /* margin: auto; */
+  display: flex;
+}
+.face {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 10px 20px 0;
+}
+
+#logo {
+  width: 30px;
+  cursor: pointer;
+}
+#logoo {
+  height: 50px;
+}
+h5 {
+  text-align: center;
+  padding: 20px 5px;
+  font-size: 14px;
+  color: rgb(51, 145, 112);
+  margin-bottom: 10px;
+}
+h5 a {
+  color: rgb(24, 70, 70);
+}
+h5 a:hover {
+  color: rgb(12, 39, 39);
+}
+p {
+  text-align: center;
+  padding: 20px 5px;
+  font-size: 20px;
+  color: rgb(91, 161, 137);
+  margin-bottom: 10px;
+}
+
+.wall,
+.wall2 {
+  height: 560px;
+  width: 400px;
+}

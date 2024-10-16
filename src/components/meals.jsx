@@ -10,12 +10,14 @@ class Part extends Component{
             <div>
             <img src={image}></img>
             </div>
+            <div className="desc">
             <div>
-            <h4>  {meal}</h4>
+            <h4>{meal}</h4>
           
             </div>
-            <p> {description}</p>
+            
            
+            </div>
             </div>
         )
         

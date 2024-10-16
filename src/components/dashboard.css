@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container-component {
+  display: flex;
+}
+.nav {
+  width: 20%;
+  border: 1px solid gray;
+}
+.main-dash {
+  width: 70%;
+  height: 90vh;
+  float: right;
+}
+.container-dash {
+  width: 90%;
+  height: 95%;
+  margin: 1% 5%;
+}
+.input-search {
+  width: 200px;
+  padding: 5px;
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  display: block;
+  margin-bottom: 20px;
+  background-color: rgb(243, 243, 243);
+}
+.input-search:focus {
+  box-shadow: 0 0 10px rgba(167, 167, 168, 0.5);
+  border-color: rgba(212, 213, 214, 0.5);
+}
+.container-dashboard-divs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 5px;
+  margin-top: 30px;
+}
+.dashbord-divs {
+  width: 200px;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(51, 145, 112, 0.182);
+  color: white;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 15px 2px rgb(231, 231, 231);
+}
+.dashbord-divs .btn {
+  background-color: rgb(91, 161, 137);
+  color: white;
+  margin: auto;
+}
+.dashbord-divs .btn:hover {
+  background-color: rgba(91, 161, 136, 0.645);
+}
+.container-chart-api {
+  height: 350px;
+  margin: 10px 0px;
+  display: grid;
+  grid-template-columns: 63% 30%;
+  gap: 7%;
+}
+.chart-div {
+  height: 100%;
+  border: 1px solid black;
+}
+.api-div {
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
